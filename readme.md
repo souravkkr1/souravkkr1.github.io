@@ -7,7 +7,7 @@
 
 - 🔭 I’m currently working on **Sugar Cosmetics**
 
-- 🌱 I’m currently learning **Ful Stack Web Dvelopment**
+- 🌱 I’m currently learning **Ful Stack Web Development**
 
 - 👯 I’m looking to collaborate on **Buffer.com**
 
