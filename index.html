@@ -4,9 +4,202 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style/index.css" />
     <title>Document</title>
   </head>
   <body>
-    Namaste World, my name is Sourav Kumar. Update the HTML Page.
+    <div class="main">
+      <nav>
+        <div class="left">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="mid">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <button class="btn-border"><a href="#contact">Contact</a></button>
+        </div>
+      </nav>
+
+      <!-- Homepage Main Section -->
+
+      <div class="background">
+        <div class="left">
+          <h1>Welcome to my</h1>
+          <h1>Portfolio</h1>
+          <button class="btn-border">
+            <a
+              href="https://drive.google.com/uc?export=download&id=1yd-pu3NznYO7NWn2p_PuCmhTKWSitJ47"
+              >Resume</a
+            >
+          </button>
+        </div>
+        <div class="right">
+          <img
+            src="https://i.pinimg.com/originals/02/68/d7/0268d7deb333107d0b6f9e5f724f5de8.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+
+      <div id="about">
+        <div class="left">
+          <h1>Hi, I am Sourav</h1>
+          <h2>Full Stack Web Developer</h2>
+          <p>
+            Enthusiastic, innovative Full Stack Web Developer with good
+            knowledge of front-end & back-end techniques. I love spending time
+            fixing little details and optimizing websites and having 1200 hours
+            of coding experience. I also like working in a team and always
+            lookout for exciting projects to work on.
+          </p>
+          <div class="social">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt=""
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+              alt=""
+            />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt=""
+            />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt=""
+            />
+          </div>
+          <button class="btn-border"><a href="#contact">Contact Me</a></button>
+        </div>
+        <div class="right">
+          <img
+            src="https://avatars.githubusercontent.com/u/47152893?v=4"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- Skill Section -->
+
+      <div id="skills">
+        <h1>Skills</h1>
+        <div class="sill-box">
+          <div>
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+
+      <div id="projects">
+        <h1>My Projects</h1>
+        <div class="proj-container">
+          <div>
+            <img src="./Assets/pro-1.png" alt="" />
+            <h3>My Fitness Pal</h3>
+            <p>Lorem ipsum dolor sit</p>
+          </div>
+          <div>
+            <img src="./Assets/pro-2.png" alt="" />
+            <h3>Buffer Clone</h3>
+            <p>Lorem ipsum dolor sit</p>
+          </div>
+          <div>
+            <img src="./Assets/pro-3.png" alt="" />
+            <h3>Sugar Cosmetics</h3>
+            <p>Lorem ipsum dolor sit</p>
+          </div>
+          <div>
+            <img src="./Assets/pro-4.png" alt="" />
+            <h3>RD Exports</h3>
+            <p>Paid Project</p>
+          </div>
+          <div>
+            <img src="./Assets/pro-2.png" alt="" />
+            <h3>Project 2</h3>
+            <p>Lorem ipsum dolor sit</p>
+          </div>
+          <div>
+            <img src="./Assets/pro-3.png" alt="" />
+            <h3>Project 3</h3>
+            <p>Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contact">
+        <div id="c-left">
+          <h1>Contact Me</h1>
+          <p>
+            Please feel free to contact us with any queries, and we will be more
+            than happy to help you.
+          </p>
+        </div>
+        <div id="c-right">
+          <form>
+            <input
+              type="text"
+              name="full-name"
+              id="full-name"
+              placeholder="Full Name"
+            />
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Number"
+            />
+            <input type="email" name="email" id="email" placeholder="email" />
+            <textarea name="message" id="message" cols="30" rows="7"></textarea>
+            <input type="submit" value="Submit" onsubmit="sendMail()" />
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+nav {
+    /* border: 2px solid yellow; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 30px;
+    /* background: linear-gradient(360deg, #000000, #3E065F); */
+    background-color: #12031c;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav>.mid>ul {
+    display: flex;
+    /* border: 2px solid black; */
+}
+
+.mid>ul>li {
+    list-style: none;
+    padding: 10px 30px;
+}
+
+.mid>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+.mid>ul>li>a:hover {
+    border-bottom: 2px solid #8E05C2;
+    font-size: 17px;
+}
+
+
+.right>button {
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: 500;
+    border: 1px solid #8E05C2;
+    background-color: black;
+    color: white;
+}
+/* Homepage main section */
+
+.background{
+    height: 100vh;
+    border: 1px solid #12031c;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding-top: 62px;
+    padding: 0 100px;
+    background-color: #3e065f4a;
+}
+.background > div{
+    /* border: 1px solid white; */
+    color: white;
+}
+.background > .left{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+.background > .left > h1{
+   font-size: 75px;
+   text-align: left;
+}
+.background > .left > h1:last-child{
+   color: #8E05C2;
+}
+.btn-border{
+    padding: 14px 50px;
+    border-radius: 7px;
+    font-weight: 500;
+    border: 1px solid #8E05C2;
+    background-color: black;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btn-border>a{
+    text-decoration: none;
+    color: white;
+
+}
+.btn-border:hover{
+    
+    border: 1px solid white;
+}
+.btn-border> a:hover{
+    color: #8E05C2;
+
+}
+.background > .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background > .right > img{
+    width: 80%;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    /* border: 1px solid green; */
+    color: white;
+    height: 100vh;
+    display: grid;
+    padding: 0 50px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    margin-top: 50px;
+}
+
+#about>div {
+    /* border: 1px solid yellow; */
+    display: flex;
+    /* gap: 30px; */
+    padding: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+#about>.left>h1 {
+    color: #8E05C2;
+    font-size: 55px;
+}
+#about>.left>h2 {
+    font-weight: 400;
+}
+
+#about>.left>p {
+    text-align: justify;
+    margin-top: 30px;
+}
+#about > .left > .social{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+.social > img{
+    width: 4.5%;
+}
+
+#about > .right{
+    background: url(https://i.pinimg.com/originals/4a/34/99/4a3499c6b5cca368ec4e3717f9077114.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#about>.right>img {
+    border-radius: 50%;
+    width: 60%;
+    /* border: 7px solid #3E065F; */
+
+}
+
+/* Skills */
+
+#skills {
+    /* border: 1px solid yellow; */
+    height: 100vh;
+    background-color: #3e065f4a;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+
+#skills>h1 {
+    color: white;
+    margin-bottom: -50px;
+    font-size: 55px;
+    border-bottom: 1px solid #8c04c2;
+    width: 200px;
+    text-align: center;
+}
+
+#skills>div {
+    /* border: 1px solid white; */
+    /* height: 60%; */
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+#skills>div>div {
+    border: 0.5px solid #8c04c2;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    padding: 30px;
+
+}
+
+#skills>div>div>img {
+    width: 70%;
+
+}
+
+/* Projects */
+
+#projects{
+    /* border: 2px solid white; */
+    height: 100vh;
+    padding: 70px 50px;
+    background-color: black;
+}
+#projects > h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 55px;
+}
+#projects > .proj-container{
+    /* border: 1px solid white; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    width: 70%;
+    margin: auto;
+}
+.proj-container > div{
+    /* border: 1px solid red; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(220deg, #000000, #3E065F);
+    border-radius: 10px;
+}
+.proj-container > div > img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.proj-container > div > h3{
+    margin: 10px;
+}
+.proj-container > div > p{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+/* Contact */
+
+#contact{
+    /* border: 2px solid black; */
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #3e065f4a;
+    /* background-color: rgb(215, 212, 212); */
+  }
+  #contact > div {
+    /* border: 2px solid red; */
+    width: 45%;
+    margin: 50px 0;
+    padding: 40px;
+  }
+  #contact > #c-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: white;
+  }
+  #contact > #c-left > h1{
+    margin-bottom: 30px;
+    font-size: 55px;
+  }
+  #contact > #c-right > form{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    width: 70%;
+    margin: auto;
+  }
+  textarea{
+    margin-top: 15px;
+    border: none;
+    border-radius: 7px;
+  }
+  #contact > #c-right > form  > input{
+    margin-top: 15px;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 7px;
+  }
+  #contact > #c-right > form  > input:nth-child(5){
+    background-color: #3E065F;
+    color: white;
+    cursor: pointer;
+  }
