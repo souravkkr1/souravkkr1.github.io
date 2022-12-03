@@ -56,8 +56,8 @@ nav>.mid>ul {
 /* Homepage main section */
 
 .background{
+
     height: 100vh;
-    border: 1px solid #12031c;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -65,6 +65,7 @@ nav>.mid>ul {
     padding: 0 100px;
     background-color: #3e065f4a;
 }
+
 .background > div{
     /* border: 1px solid white; */
     color: white;
@@ -322,4 +323,71 @@ nav>.mid>ul {
     background-color: #3E065F;
     color: white;
     cursor: pointer;
+  }
+
+
+
+  /*  Mobile view */
+  @media only screen   and (min-width:481px) and (max-width:768px){
+    .background > .left{
+        align-items: center;
+     }
+    .background > .left > h1{
+        text-align: center;
+     }
+     #about{
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: row dense;
+     }
+     #about > div{
+        text-align: center;
+     }
+     #about > .left{
+        grid-row: 2;
+     }
+     #about > .right{
+        grid-row: 1;
+        height: 500px;
+     }
+     #about > .right >img{
+        width: 90%;
+     }
+     .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+    #skills{
+        height: auto;
+    }
+    #skills > h1{
+        margin-bottom: 40px;
+    }
+    #skills>div {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6,1fr);
+        /* width: 40%; */
+    }
+    #projects {
+        height: auto;
+    }
+    
+    #projects > .proj-container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    #contact{
+        flex-direction: column;
+      }
+      #contact > div{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+      }
+}
+
+
+
+  @media only screen   and (min-width:769px) and (max-width:1100px){
   }
