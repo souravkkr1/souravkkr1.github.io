@@ -329,22 +329,36 @@ nav>.mid>ul {
 
   /*  Mobile view */
   @media only screen   and (min-width:481px) and (max-width:768px){
+    nav>.mid {
+        display: none;
+    }
+    .background{
+        display: flex;
+        flex-direction: column;
+        padding: 26px;
+    }
     .background > .left{
         align-items: center;
      }
     .background > .left > h1{
         text-align: center;
      }
+     .background > .right{
+        display: none;
+    }
      #about{
         height: auto;
         grid-template-columns: repeat(1, 1fr);
         grid-auto-flow: row dense;
+        padding: 0;
+        margin: 0 20px;
      }
      #about > div{
         text-align: center;
      }
      #about > .left{
         grid-row: 2;
+        padding: 20px;
      }
      #about > .right{
         grid-row: 1;
