@@ -77,7 +77,7 @@ nav>.mid>ul {
     align-items: flex-start;
 }
 .background > .left > h1{
-   font-size: 75px;
+   font-size: 40px;
    text-align: left;
 }
 .background > .left > h1:last-child{
@@ -355,6 +355,7 @@ nav>.mid>ul {
      }
      #about > div{
         text-align: center;
+        padding: 01;
      }
      #about > .left{
         grid-row: 2;
@@ -374,14 +375,27 @@ nav>.mid>ul {
      }
     #skills{
         height: auto;
+        padding: 100px 10px;
     }
     #skills > h1{
         margin-bottom: 40px;
     }
     #skills>div {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6,1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        /* border: 1px solid red; */
+        width: 90%;
+        
         /* width: 40%; */
+    }
+    #skills > div > div{
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+    #skills > div > div> img{
+        width: 100%;
     }
     #projects {
         height: auto;
@@ -393,11 +407,16 @@ nav>.mid>ul {
     }
     #contact{
         flex-direction: column;
+        padding-bottom: 40px;
       }
       #contact > div{
         width: 100%;
         text-align: center;
         margin-bottom: 5px;
+        padding: 0 40px;
+      }
+      #contact > #c-right > form{
+        width: 100%;
       }
 }
 
