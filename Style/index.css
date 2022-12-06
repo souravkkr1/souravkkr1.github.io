@@ -205,8 +205,8 @@ nav>.mid>ul {
     width: 70%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
 
 #skills>div>div {
@@ -217,7 +217,9 @@ nav>.mid>ul {
     justify-content: center;
     align-items: center;
     /* background-color: white; */
-    padding: 30px;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
 
 }
 
@@ -230,7 +232,7 @@ nav>.mid>ul {
 
 #projects{
     /* border: 2px solid white; */
-    height: 100vh;
+    height: auto;
     padding: 70px 50px;
     background-color: black;
 }
