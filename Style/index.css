@@ -77,7 +77,7 @@ nav>.mid>ul {
     align-items: flex-start;
 }
 .background > .left > h1{
-   font-size: 40px;
+   font-size: 55px;
    text-align: left;
 }
 .background > .left > h1:last-child{
@@ -192,6 +192,7 @@ nav>.mid>ul {
 
 #skills>h1 {
     color: white;
+    margin-top: 50px;
     margin-bottom: -50px;
     font-size: 55px;
     border-bottom: 1px solid #8c04c2;
@@ -222,6 +223,9 @@ nav>.mid>ul {
     margin: auto;
 
 }
+#skills > div > div:hover{
+    border: 1px solid white;
+}
 
 #skills>div>div>img {
     width: 70%;
@@ -237,10 +241,12 @@ nav>.mid>ul {
     background-color: black;
 }
 #projects > h1{
+    border-bottom: 1px solid #8c04c2;
     color: white;
     text-align: center;
-    margin-bottom: 40px;
     font-size: 55px;
+    width: 350px;
+    margin: 60px auto;
 }
 #projects > .proj-container{
     /* border: 1px solid white; */
@@ -248,7 +254,7 @@ nav>.mid>ul {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
     width: 70%;
-    margin: auto;
+    margin: 50px auto;
 }
 .proj-container > div{
     /* border: 1px solid red; */
@@ -260,6 +266,9 @@ nav>.mid>ul {
     color: white;
     background: linear-gradient(220deg, #000000, #3E065F);
     border-radius: 10px;
+}
+.proj-container > div:hover{
+    border: 1px solid #8c04c2;
 }
 .proj-container > div > img{
     width: 100%;
@@ -273,6 +282,27 @@ nav>.mid>ul {
     margin-bottom: 20px;
     padding: 0 10px;
 }
+.proj-btn{
+    padding: 14px 20px;
+    border-radius: 7px;
+    font-weight: 500;
+    border: 1px solid #8E05C2;
+    background-color: black;
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+.proj-btn>a{
+    text-decoration: none;
+    color: white;
+
+}
+.proj-btn:hover{
+    color: #8E05C2;
+    border: 1px solid white;
+}
+
 
 /* Contact */
 
