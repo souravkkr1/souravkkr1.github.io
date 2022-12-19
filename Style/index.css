@@ -622,4 +622,19 @@ nav>.mid>ul {
 
 
   @media only screen   and (min-width:769px) and (max-width:1100px){
+    nav > .left > h2{
+        font-size: 30px
+    }
+    .background > .right{
+        display: none;
+    }
+    #about{
+        padding: 0;
+    }
+    #about > .right{
+        margin-right: 100px;
+    }
+    #about > .right > img{
+        width: 100%;
+    }
   }

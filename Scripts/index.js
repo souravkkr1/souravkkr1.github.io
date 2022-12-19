@@ -43,3 +43,18 @@ function closeFunc() {
 function openFunc() {
     menu.style.display = "block"
 }
+
+// Contact Form
+
+function sendMail() {
+    let params = {
+        from_name: document.getElementById("full-name").value,
+        email_id: document.getElementById("email").value,
+        number: document.getElementById("number").value,
+        message: document.getElementById("message").value,
+    }
+    emailJs.send("service_8964ntz", "template_74gsu6s", params).then(function (res) {
+        alert("Success" + res.status)
+    })
+}
+
