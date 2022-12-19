@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Style/index.css" />
-    <title>Document</title>
+    <title>Sourav Kumar</title>
   </head>
   <body>
     <div class="main">
+      <div onClick="{closeFunc()}" class="ham-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
       <nav>
         <div class="left">
-          <h2>Portfolio</h2>
+          <h2>Sourav</h2>
         </div>
         <div class="mid">
           <ul>
@@ -23,7 +32,18 @@
           </ul>
         </div>
         <div class="right">
-          <button class="btn-border"><a href="#contact">Contact</a></button>
+          <button class="btn-border">
+            <a
+              href="https://drive.google.com/uc?export=download&id=1yd-pu3NznYO7NWn2p_PuCmhTKWSitJ47"
+              >Resume</a
+            >
+          </button>
+          <img
+            onClick="{openFunc()}"
+            class="ham-icon"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png"
+            alt=""
+          />
         </div>
       </nav>
 
@@ -31,14 +51,13 @@
 
       <div class="background">
         <div class="left">
-          <h1>Welcome to my</h1>
-          <h1>Portfolio</h1>
-          <button class="btn-border">
-            <a
-              href="https://drive.google.com/uc?export=download&id=1yd-pu3NznYO7NWn2p_PuCmhTKWSitJ47"
-              >Resume</a
-            >
-          </button>
+          <p>Hi, my name is</p>
+          <h1>Sourav Kumar</h1>
+          <img
+            src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=42&duration=2000&pause=800&color=8E05C2&background=FFFFFF00&width=600&height=61&lines=Full+Stack+Web+Developer;Aspiring+MERN+Developer;Eager+Learner"
+            alt="Typing SVG"
+          />
+          <button class="btn-border"><a href="#contact">Contact</a></button>
         </div>
         <div class="right">
           <img
@@ -52,8 +71,8 @@
 
       <div id="about">
         <div class="left">
-          <h1>Hi, I am Sourav</h1>
-          <h2>Full Stack Web Developer</h2>
+          <h2>About me</h2>
+          <!-- <h2>Full Stack Web Developer</h2> -->
           <p>
             Enthusiastic, innovative Full Stack Web Developer with good
             knowledge of front-end & back-end techniques. I love spending time
@@ -61,23 +80,27 @@
             of coding experience. I also like working in a team and always
             lookout for exciting projects to work on.
           </p>
-          <div class="social">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-              alt=""
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
-              alt=""
-            />
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-              alt=""
-            />
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-              alt=""
-            />
+          <div id="social">
+            <a href="https://github.com/souravkkr1"
+              ><img
+                src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png"
+                alt=""
+            /></a>
+            <a href="https://linkedin.com/in/souravkkr1"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt=""
+            /></a>
+            <a href="mailto:kmrsourav786@gmail.com"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
+                alt=""
+            /></a>
+            <a href="https://instagram.com/krsouravkr"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+                alt=""
+            /></a>
           </div>
           <button class="btn-border"><a href="#contact">Contact Me</a></button>
         </div>
@@ -92,181 +115,130 @@
       <!-- Skill Section -->
 
       <div id="skills">
-        <h1>Skills</h1>
-        <div class="sill-box">
-          <div>
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg""
-            alt="">
-          </div>
-          <div>
-            <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg""
-            alt="">
-          </div>
-          <div>
-            <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg""
-            alt="">
-          </div>
-          <div>
-            <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg""
-            alt="">
-          </div>
-          <div>
-            <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg""
-            alt="">
-          </div>
-          <div>
-            <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg""
-            alt="">
-          </div>
+        <div class="skills-container">
+          <h2>Skills</h2>
+          <div class="skills-box"></div>
         </div>
-      </div>
-
-      <!-- Github -->
-
-      <div class="github">
-        <h1>Github</h1>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="achivements">
+          <img
+            align="center"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=souravkkr1&"
+            alt="souravkkr1"
+          />
+          <img
+            align="center"
+            src="https://github-readme-stats.vercel.app/api?username=souravkkr1&show_icons=true&locale=en"
+            alt="souravkkr1"
+          />
+        </div>
+        <div class="calendar">
+          <img
+            src="https://ghchart.rshah.org/souravkkr1"
+            alt="2016rshah's Github chart"
+          />
+        </div>
       </div>
 
       <!-- Projects Section -->
 
       <div id="projects">
-        <h1>My Projects</h1>
+        <h2>My Projects</h2>
         <div class="proj-container">
           <div>
             <img src="./Assets/pro-1.png" alt="" />
             <h3>My Fitness Pal</h3>
             <p>
               MyFitnessPal is a smartphone app and website that tracks diet and
-              exercise. It is an individual project. 
+              exercise. The app uses gamification elements to encourage
+              adherence to exercise and diet goals.
             </p>
             <h3>Features:</h3>
-              <p>
+            <p>Signup, Login, Sort, and Filter.</p>
+            <h3>Techstacks:</h3>
+            <p>HTML, CSS, JavaScript</p>
 
-              </p>Signup, Login,
-              Sort, and Filter. 
-            </p>
-              <h3>Techstacks: </h3>
-              <p>Techstack: HTML, CSS, JavaScript</p>
-             
             <div>
-              <button class="proj-btn">Preview</button>
-              <button class="proj-btn">Source Code</button>
+              <a
+                href="https://sunny-manatee-64fa6d.netlify.app"
+                target="”_blank”"
+                ><button class="proj-btn">Preview</button></a
+              >
+              <a
+                href="https://github.com/souravkkr1/civil-kettle-7397"
+                target="”_blank”"
+                ><button class="proj-btn">Source Code</button></a
+              >
             </div>
           </div>
           <div>
             <img src="./Assets/pro-2.png" alt="" />
             <h3>Buffer Clone</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-              maxime eius accusamus nisi. Dignissimos ut quam molestiae
-              explicabo quibusdam? Dolor veritatis numquam dolore dolorum esse
-              reprehenderit eius animi explicabo maiores?
+              Buffer is a software application for the web and mobile, designed
+              to manage accounts in social networks, by providing the means for
+              a user to schedule posts to Social Media Pages.
             </p>
+            <h3>Features:</h3>
+            <p>Signup, Login, price calculator</p>
+            <h3>Techstacks:</h3>
+            <p>HTML, CSS, Advance JavaScript</p>
             <div>
-              <button class="proj-btn">Preview</button>
-              <button class="proj-btn">Source Code</button>
+              <a
+                href="https://unique-zuccutto-5c2719.netlify.app"
+                target="”_blank”"
+                ><button class="proj-btn">Preview</button></a
+              >
+              <a
+                href="https://github.com/Sunilrath101/poetic-minute-6695"
+                target="”_blank”"
+                ><button class="proj-btn">Source Code</button></a
+              >
             </div>
           </div>
           <div>
             <img src="./Assets/pro-3.png" alt="" />
             <h3>Sugar Cosmetics</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-              maxime eius accusamus nisi. Dignissimos ut quam molestiae
-              explicabo quibusdam? Dolor veritatis numquam dolore dolorum esse
-              reprehenderit eius animi explicabo maiores?
+              Sugar Cosmetics is an e-commerce website for premium cosmetics
+              products.The brand's bestselling goods in the Lips, Eyes, Face,
+              Nails & Skin categories are sent all over the world.
             </p>
+            <h3>Features:</h3>
+            <p>Signup, Login, Sort, Filter, Add to cart</p>
+            <h3>Techstacks:</h3>
+            <p>React, React-icon, Styled Components</p>
             <div>
-              <button class="proj-btn">Preview</button>
-              <button class="proj-btn">Source Code</button>
+              <a href="https://sugar-cos-iota.vercel.app" target="”_blank”"
+                ><button class="proj-btn">Preview</button></a
+              >
+              <a
+                href="https://github.com/souravkkr1/super-grain-6610/tree/main/sugar-cosmetics"
+                target="”_blank”"
+                ><button class="proj-btn">Source Code</button></a
+              >
             </div>
           </div>
           <div>
-            <img src="./Assets/pro-4.png" alt="" />
-            <h3>RD Exports</h3>
+            <img src="./Assets/pro-5.png" alt="" />
+            <h3>Travilla</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-              maxime eius accusamus nisi. Dignissimos ut quam molestiae
-              explicabo quibusdam? Dolor veritatis numquam dolore dolorum esse
-              reprehenderit eius animi explicabo maiores?
+              Travilla is a homestay, villas, and Appartment booking website. It
+              allows user to book properties according to thier choice and also
+              they can list thier properties.
             </p>
+            <h3>Features:</h3>
+            <p>Signup, Login, Sort, Filter, Book Properties, Add properties</p>
+            <h3>Techstacks:</h3>
+            <p>React, React-icon, Styled Components</p>
             <div>
-              <button class="proj-btn">Preview</button>
-              <button class="proj-btn">Source Code</button>
-            </div>
-          </div>
-          <div>
-            <img src="./Assets/pro-2.png" alt="" />
-            <h3>Project 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-              maxime eius accusamus nisi. Dignissimos ut quam molestiae
-              explicabo quibusdam? Dolor veritatis numquam dolore dolorum esse
-              reprehenderit eius animi explicabo maiores?
-            </p>
-            <div>
-              <button class="proj-btn">Preview</button>
-              <button class="proj-btn">Source Code</button>
-            </div>
-          </div>
-          <div>
-            <img src="./Assets/pro-3.png" alt="" />
-            <h3>Project 3</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-              maxime eius accusamus nisi. Dignissimos ut quam molestiae
-              explicabo quibusdam? Dolor veritatis numquam dolore dolorum esse
-              reprehenderit eius animi explicabo maiores?
-            </p>
-            <div>
-              <button class="proj-btn">Preview</button>
-              <button class="proj-btn">Source Code</button>
+              <a href="https://travilla.netlify.app/" target="”_blank”"
+                ><button class="proj-btn">Preview</button></a
+              >
+              <a
+                href="https://github.com/Sunilrath101/annoying-wing-980"
+                target="”_blank”"
+                ><button class="proj-btn">Source Code</button></a
+              >
             </div>
           </div>
         </div>
@@ -275,11 +247,33 @@
       <!-- Contact Section -->
       <div id="contact">
         <div id="c-left">
-          <h1>Contact Me</h1>
+          <h2>Contact Me</h2>
           <p>
             Please feel free to contact us with any queries, and we will be more
             than happy to help you.
           </p>
+          <div id="social">
+            <a href="https://github.com/souravkkr1"
+              ><img
+                src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png"
+                alt=""
+            /></a>
+            <a href="https://linkedin.com/in/souravkkr1"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt=""
+            /></a>
+            <a href="mailto:kmrsourav786@gmail.com"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
+                alt=""
+            /></a>
+            <a href="https://instagram.com/krsouravkr"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+                alt=""
+            /></a>
+          </div>
         </div>
         <div id="c-right">
           <form>
@@ -304,3 +298,5 @@
     </div>
   </body>
 </html>
+
+<script src="/Scripts/index.js"></script>
