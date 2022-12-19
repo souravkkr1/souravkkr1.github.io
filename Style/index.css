@@ -54,6 +54,10 @@ nav>.mid>ul {
     border: 1px solid #8E05C2;
     background-color: black;
     color: white;
+    width: 120px;
+}
+.right > button > img{
+    width: 25%;
 }
 .ham-icon{
     display: none;
@@ -100,8 +104,24 @@ nav>.mid>ul {
    text-align: left;
    margin: 20px 0;
 }
+
 .background > .left > h1:last-child{
    color: #8E05C2;
+}
+.background > .left > div{
+    display: flex;
+}
+.background > .left > div >button + button{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    gap: 10px;
+}
+.background > .left > div >button + button > img{
+    filter: brightness(0) invert(1);
+    width: 70%;
 }
 .btn-border{
     padding: 14px 50px;
@@ -264,7 +284,6 @@ nav>.mid>ul {
     padding: 20px;
     width: 70%;
     margin: auto;
-
 }
 .skills-box > div:hover{
     border: 1px solid white;
@@ -467,9 +486,9 @@ nav>.mid>ul {
         position: fixed;
         z-index: 10000;
         width: 100%;
-        background-color: #8E05C2;
+        background-color: #12031c;
         height: 100vh;
-        display: none;
+        display: flex none;
     }
     .ham-menu > ul{
         list-style: none;
@@ -477,14 +496,26 @@ nav>.mid>ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 250px;
+        gap: 30px;
     }
     .ham-menu > ul > li > a{
         text-decoration: none;
         color: white;
-        font-size: 30px;
+        font-size: 26px;
+        font-weight: 200;
     }
     .ham-menu > ul > li > a:hover{
        color: #3E065F;
+    }
+    .ham-menu > ul > li > button{
+        display: flex;
+       width: 140px;
+       justify-content: center;
+       align-items: center;
+    }
+    .ham-menu > ul > li > button > img{
+       width: 90%;
     }
     nav > .left > h2{
         font-size: 28px;
@@ -637,4 +668,17 @@ nav>.mid>ul {
     #about > .right > img{
         width: 100%;
     }
+    .skills-box {
+        width: 90%;
+    }
+    .skills-box >div {
+        width: 100%;
+        font-size: 14px;
+    }
+    #projects > .proj-container{
+        width: 90%;
+    }
+    #contact > #c-right > form{
+        width: 100%;
+      }
   }
