@@ -47,7 +47,7 @@ nav>.mid>ul {
     font-size: 17px;
 }
 
-.right>button {
+.right > a > button {
     padding: 10px 20px;
     border-radius: 7px;
     font-weight: 500;
@@ -56,7 +56,7 @@ nav>.mid>ul {
     color: white;
     width: 120px;
 }
-.right > button > img{
+.right > a > button > img{
     width: 25%;
 }
 .ham-icon{
@@ -111,7 +111,10 @@ nav>.mid>ul {
 .background > .left > div{
     display: flex;
 }
-.background > .left > div >button + button{
+.background > .left > div > a{
+    text-decoration: none;
+}
+.watchResume{
     width: 120px;
     display: flex;
     justify-content: center;
@@ -119,7 +122,7 @@ nav>.mid>ul {
     margin-left: 20px;
     gap: 10px;
 }
-.background > .left > div >button + button > img{
+.watchResume >  img{
     filter: brightness(0) invert(1);
     width: 70%;
 }
@@ -130,20 +133,13 @@ nav>.mid>ul {
     border: 1px solid #8E05C2;
     background-color: black;
     cursor: pointer;
-    /* margin-top: 20px; */
-}
-.btn-border>a{
     text-decoration: none;
     color: white;
-
+    /* margin-top: 20px; */
 }
 .btn-border:hover{
-    
     border: 1px solid white;
-}
-.btn-border> a:hover{
     color: #8E05C2;
-
 }
 .background > .right{
     display: flex;
@@ -186,34 +182,30 @@ nav>.mid>ul {
     width: 200px;
     text-align: center;
 }
-#about>.left>h2 {
-    /* font-weight: 400; */
-}
 
 #about>.left>p {
     text-align: justify;
     margin-top: 30px;
 }
-#about > .left > #social{
-    display: flex;
-    gap: 15px;
-    margin: 25px 0;
-}
 #social{
     /* border: 1px solid red; */
-    width: 40%;
+    width: 50%;
+    gap: 20px;
+    margin: 25px 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 #social > a {
     width: 100%;
 }
 #social > a > img{
-    width:60%;
+    width:70%;
     height: auto;
 }
-
+.left > a:nth-child(4) > button{
+    width: 47%;
+}
 #about > .right{
     background: url(https://i.pinimg.com/originals/4a/34/99/4a3499c6b5cca368ec4e3717f9077114.gif);
     background-position: center;
@@ -229,7 +221,6 @@ nav>.mid>ul {
     border-radius: 47%;
     width: 60%;
     /* border: 7px solid #3E065F; */
-
 }
 
 /* Skills */
@@ -382,6 +373,15 @@ nav>.mid>ul {
     margin-bottom: 7px;
     padding: 0 25px;
 }
+.techstacks{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.techstacks > img{
+    width: 10%;
+}
 .proj-btn{
     padding: 14px 20px;
     border-radius: 7px;
@@ -449,7 +449,7 @@ nav>.mid>ul {
     border-radius: 7px;
     border: 1px solid #8c04c2;
   }
-  #contact > #c-right > form  > input{
+  #contact > #c-right > form  > input, textarea{
     margin-top: 15px;
     padding: 13px 20px;
     border: none;
@@ -465,6 +465,26 @@ nav>.mid>ul {
     background-color: black;
     color: #8c04c2;
     cursor: pointer;
+  }
+
+  /* FOOTER SECTION */
+
+  footer{
+    /* border: 1px solid red; */
+    height: auto;
+    width: 100%;
+  }
+  footer > div{
+    margin: 10px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer > div > p{
+    text-align: center;
+    padding: 0 10px;
+    font-size: 12px;
   }
 
 
@@ -626,6 +646,7 @@ nav>.mid>ul {
     }
     #projects > h2{
         width: 300px;
+        
     }
     #projects > .proj-container{
         grid-template-columns: repeat(1, 1fr);
@@ -674,6 +695,12 @@ nav>.mid>ul {
     .skills-box >div {
         width: 100%;
         font-size: 14px;
+    }
+    .achivements > img{
+        width: 35%;
+    }
+    .calendar{
+        width: 75%;
     }
     #projects > .proj-container{
         width: 90%;
