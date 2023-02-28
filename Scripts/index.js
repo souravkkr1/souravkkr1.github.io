@@ -8,10 +8,8 @@ const skillsInfo = [
     { img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg", title: "Mongo DB" },
     { img: "https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true", title: "Charkra UI" },
     { img: "https://sunilrath101.github.io/static/media/redux-240.8442924faa3925456ec8.png", title: "Redux" },
-    { img: "https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png", title: "GitHub" },
-    { img: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Figma-1-logo.png", title: "Figma" },
-    { img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png", title: "VS Code" },
 ]
+
 
 let container = document.querySelector(".skills-box");
 
@@ -30,6 +28,32 @@ skillsInfo.map((item) => {
     div.append(img, title);
     container.append(div)
 })
+
+
+const toolsInfo = [
+    { img: "https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png", title: "GitHub" },
+    { img: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Figma-1-logo.png", title: "Figma" },
+    { img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png", title: "VS Code" },
+]
+
+let toolsContainer = document.querySelector("#tools-box");
+
+toolsInfo.map((item) => {
+    let div = document.createElement("div");
+    div.style.display = "flex";
+    div.style.flexDirection = "column";
+    let img = document.createElement("img");
+    img.setAttribute("src", item.img)
+    img.setAttribute("alt", item.title)
+    let title = document.createElement("h4");
+    title.innerText = item.title
+    title.style.color = "#8E05C2"
+    title.style.marginTop = "10px"
+
+    div.append(img, title);
+    toolsContainer.append(div)
+})
+
 
 // Ham-Menu-Close
 
@@ -63,7 +87,7 @@ function sendMail() {
 
 document.querySelector(".resume-btn").addEventListener(onclick, resumeFunc);
 
-function resumeFunc(){
-    
+function resumeFunc() {
+
 }
 
