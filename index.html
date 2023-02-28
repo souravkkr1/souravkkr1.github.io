@@ -9,8 +9,9 @@
   </head>
   <body>
     <div class="main">
-      <div onClick="{closeFunc()}" class="ham-menu">
+      <div class="ham-menu">
         <ul>
+          <li onClick="{closeFunc()}">X</li>
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -19,6 +20,7 @@
           <li>
             <button class="btn-border">
               <a
+              target="_blank"
                 href="https://drive.google.com/uc?export=download&id=1jTZcAzck4Zle3hO32YXhly5FjRf6rrGu"
                 >
               <img
@@ -46,6 +48,7 @@
         </div>
         <div class="right">
           <a
+            target="_blank"
             href="https://drive.google.com/uc?export=download&id=1jTZcAzck4Zle3hO32YXhly5FjRf6rrGu"
           >
             <button class="btn-border">
@@ -79,8 +82,10 @@
             <a href="#contact">
              <button class="btn-border">Contact</button></a>
             <a
-                target="_blank"
-                href="https://drive.google.com/file/d/1yd-pu3NznYO7NWn2p_PuCmhTKWSitJ47/view"
+                class="resume-btn"
+                href="#"
+                onclick="window.open('https://drive.google.com/file/d/1jTZcAzck4Zle3hO32YXhly5FjRf6rrGu/view?usp=sharing');
+                window.open('https://drive.google.com/uc?export=download&id=1jTZcAzck4Zle3hO32YXhly5FjRf6rrGu')"
                 >
             <button class="btn-border watchResume">
               <img
@@ -104,7 +109,7 @@
 
       <div id="about">
         <div class="left">
-          <h2>About me</h2>
+          <h2 class="headings">About me</h2>
           <!-- <h2>Full Stack Web Developer</h2> -->
           <p>
             Enthusiastic, innovative Full Stack Web Developer with good
@@ -114,30 +119,31 @@
             lookout for exciting projects to work on.
           </p>
           <div id="social">
-            <a href="https://github.com/souravkkr1"
+            <a target="_blank" href="https://github.com/souravkkr1"
               ><img
                 src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png"
                 alt=""
             /></a>
-            <a href="https://linkedin.com/in/souravkkr1"
+            <a target="_blank" href="https://linkedin.com/in/souravkkr1"
               ><img
                 src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
                 alt=""
             /></a>
-            <a href="mailto:kmrsourav786@gmail.com"
+            <a target="_blank" href="mailto:kmrsourav786@gmail.com"
               ><img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
                 alt=""
             /></a>
-            <a href="https://instagram.com/krsouravkr"
+            <a target="_blank" href="https://instagram.com/krsouravkr"
               ><img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
                 alt=""
             /></a>
           </div>
-          <a href="#contact"><button class="btn-border">Contact Me</button></a>
+          <!-- <a href="#contact"><button class="btn-border">Contact Me</button></a> -->
         </div>
         <div class="right">
+          <h2 class="headings">About me</h2>
           <img
             src="https://avatars.githubusercontent.com/u/47152893?v=4"
             alt=""
@@ -149,7 +155,7 @@
 
       <div id="skills">
         <div class="skills-container">
-          <h2>Skills</h2>
+          <h2 class="headings">Skills</h2>
           <div class="skills-box"></div>
         </div>
         <div class="achivements">
@@ -175,7 +181,7 @@
       <!-- Projects Section -->
 
       <div id="projects">
-        <h2>My Projects</h2>
+        <h2 class="headings">My Projects</h2>
         <div class="proj-container">
           <div>
             <img src="./Assets/pro-1.png" alt="" />

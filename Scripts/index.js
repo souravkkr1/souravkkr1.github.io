@@ -58,3 +58,12 @@ function sendMail() {
     })
 }
 
+// Resume View and Download Simultaneously
+
+
+document.querySelector(".resume-btn").addEventListener(onclick, resumeFunc);
+
+function resumeFunc(){
+    
+}
+
